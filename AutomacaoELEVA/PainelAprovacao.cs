@@ -37,7 +37,7 @@ namespace AutomacaoELEVA
             Thread.Sleep(3000);
 
             //As op��es para o tipo de data s�o: DataSolicitacao, DataVencimento, DataCompetencia
-            painelAprovacaoPage.filtrarDataPainelAprovacao("DataVencimento", "01/01/2020 at� 01/02/2020");
+            painelAprovacaoPage.filtrarDataPainelAprovacao("DataVencimento", "01/01/2020 até 01/02/2020");
 
             string caminhoArq = retornaCaminhoArquivo();
 
@@ -97,7 +97,7 @@ namespace AutomacaoELEVA
                 novoMes = mes.ToString();
             }
 
-            string caminhdoArqExportado = @"C:\Users\" + Environment.UserName + @"\Downloads\" + ano + novoMes + novoDia + "_PainelAutoriza��o.xlsx";
+            string caminhdoArqExportado = @"C:\Users\" + Environment.UserName + @"\Downloads\" + ano + novoMes + novoDia + "_PainelAutorização.xlsx";
             return caminhdoArqExportado;
         }
 
